@@ -5,293 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LT Contadores Asesores</title>
   <link rel="icon" type="image/png" href="favicon.png">
-
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, Helvetica, sans-serif;
-    }
-
-    body{
-      background:#f5f7fa;
-      color:#222;
-    }
-
-    header{
-      background:white;
-      padding:40px 20px;
-      text-align:center;
-      box-shadow:0 2px 10px rgba(0,0,0,0.05);
-    }
-
-    .logo{
-      width:220px;
-      max-width:90%;
-      margin-bottom:20px;
-      border-radius:12px;
-    }
-
-    h1{
-      font-size:2.2rem;
-      color:#0b2d3b;
-      margin-bottom:10px;
-    }
-
-    .subtitle{
-      color:#555;
-      font-size:1.1rem;
-    }
-
-    .hero{
-      padding:60px 20px;
-      text-align:center;
-      max-width:1000px;
-      margin:auto;
-    }
-
-    .hero h2{
-      font-size:2rem;
-      margin-bottom:20px;
-      color:#0b2d3b;
-    }
-
-    .hero p{
-      font-size:1.1rem;
-      line-height:1.7;
-      color:#555;
-      max-width:800px;
-      margin:auto;
-    }
-
-    .services{
-      padding:60px 20px;
-      background:white;
-    }
-
-    .services h2{
-      text-align:center;
-      margin-bottom:40px;
-      color:#0b2d3b;
-      font-size:2rem;
-    }
-
-    .service-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-      max-width:1100px;
-      margin:auto;
-    }
-
-    .card{
-      background:#f7f9fc;
-      padding:30px;
-      border-radius:18px;
-      box-shadow:0 5px 15px rgba(0,0,0,0.05);
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-5px);
-    }
-
-    .card h3{
-      margin-bottom:15px;
-      color:#0b2d3b;
-    }
-
-    .card p{
-      color:#555;
-      line-height:1.6;
-    }
-
-    .contact{
-      padding:60px 20px;
-      text-align:center;
-    }
-
-    .contact h2{
-      color:#0b2d3b;
-      margin-bottom:20px;
-      font-size:2rem;
-    }
-
-    .contact p{
-      margin-bottom:15px;
-      color:#555;
-      font-size:1.1rem;
-    }
-
-    .btn{
-      display:inline-block;
-      margin-top:20px;
-      padding:15px 30px;
-      background:#0b2d3b;
-      color:white;
-      text-decoration:none;
-      border-radius:10px;
-      font-weight:bold;
-      transition:0.3s;
-    }
-
-    .btn:hover{
-      background:#12465c;
-    }
-
-    footer{
-      background:#0b2d3b;
-      color:white;
-      text-align:center;
-      padding:20px;
-      margin-top:40px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <img src="logo-web.png" alt="LT Contadores Asesores" class="logo" style="max-width: 520px; width: 100%; height: auto;">
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="logo-web.png" alt="LT Contadores Asesores">
+      </a>
+    </div>
 
-  
-
-  <p class="subtitle">
-    Servicios contables, fiscales y administrativos para empresas y personas físicas.
-  </p>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
 </header>
 
 <section class="hero">
-  <h2>Servicios y asesoría profesional</h2>
+  <div class="fade-in">
+    <h1>Soluciones contables claras para empresas y personas físicas.</h1>
 
-  <p>
-    En LT Contadores Asesores ofrecemos soluciones contables, fiscales y administrativas
-    adaptadas a las necesidades de cada cliente, brindando atención profesional,
-    confianza y seguimiento personalizado.
-  </p>
-</section>
+    <p>
+      En LT Contadores Asesores brindamos servicios contables, fiscales,
+      laborales y administrativos con atención profesional y personalizada.
+    </p>
 
-<section class="services">
-  <h2>Servicios</h2>
+    <a href="https://wa.me/523316468984" class="btn-primary" target="_blank">
+      Contactar por WhatsApp
+    </a>
+  </div>
 
-  <div class="service-grid">
-
-    <div class="card">
-      <h3>Contabilidad General</h3>
-      <p>Registro contable, estados financieros y control administrativo.</p>
-    </div>
-
-    <div class="card">
-      <h3>Asesoría Fiscal</h3>
-      <p>Declaraciones mensuales, anuales y estrategias fiscales.</p>
-    </div>
-
-    <div class="card">
-      <h3>Nóminas</h3>
-      <p>Cálculo de nómina, SUA, IDSE e IMSS.</p>
-    </div>
-
-    <div class="card">
-      <h3>Facturación</h3>
-      <p>Emisión y control de CFDI y procesos administrativos.</p>
-    </div>
-
-    <div class="card">
-      <h3>Personas Físicas</h3>
-      <p>Servicios fiscales y contables personalizados.</p>
-    </div>
-
-    <div class="card">
-      <h3>Empresas</h3>
-      <p>Administración contable integral para negocios.</p>
-    </div>
-
-    <div class="card">
-  <h3>Devoluciones SAT</h3>
-  <p>Seguimiento y recuperación de saldos a favor ante autoridades fiscales.</p>
-</div>
-
-<div class="card">
-  <h3>Planeación Fiscal</h3>
-  <p>Estrategias fiscales para personas físicas y empresas.</p>
-</div>
-
-<div class="card">
-  <h3>REPSE y Cumplimiento</h3>
-  <p>Asesoría especializada para empresas con obligaciones REPSE.</p>
-</div>
-
-<div class="card">
-  <h3>Trámites SAT</h3>
-  <p>RFC, e.firma, obligaciones fiscales y actualizaciones.</p>
-</div>
-
-<div class="card">
-  <h3>Defensa Fiscal</h3>
-  <p>Atención y seguimiento de requerimientos ante autoridades fiscales.</p>
-</div>
-
-<div class="card">
-  <h3>Asesoría Empresarial</h3>
-  <p>Apoyo administrativo y financiero para negocios y empresas.</p>
-</div>
-
+  <div class="fade-in">
+    <img src="logo-web.png" alt="LT Contadores" style="max-width: 100%;">
   </div>
 </section>
 
-<section class="contact">
+<section class="section">
+  <div class="fade-in">
+    <h2 style="margin-bottom:40px; color:#0b2d3b;">Nuestros principales servicios</h2>
+  </div>
 
-  <h2>Contacto</h2>
+  <div class="cards">
+    <div class="card fade-in">
+      <h3>Contabilidad General</h3>
+      <p>Control contable, estados financieros y cumplimiento mensual.</p>
+    </div>
 
-  <p>Guadalajara, Jalisco</p>
+    <div class="card fade-in">
+      <h3>Asesoría Fiscal</h3>
+      <p>Declaraciones, planeación fiscal y cumplimiento tributario.</p>
+    </div>
 
-  <p>Correo: contacto@ltcontadores.com</p>
-
-  <p>Teléfono / WhatsApp: 3316468984</p>
-
-  <a class="btn"
-     href="https://wa.me/523316468984"
-     target="_blank">
-     Contactar por WhatsApp
-  </a>
-
+    <div class="card fade-in">
+      <h3>Nómina e IMSS</h3>
+      <p>SUA, IDSE, REPSE y obligaciones patronales.</p>
+    </div>
+  </div>
 </section>
 
-<footer>
-  © 2026 LT Contadores Asesores
-</footer>
-<a href="https://wa.me/523316468984" 
-   class="whatsapp-float" 
-   target="_blank">
-   WhatsApp
+<a href="https://wa.me/523316468984" class="whatsapp-float" target="_blank">
+  WA
 </a>
 
-<style>
-.whatsapp-float{
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:25px;
-    right:25px;
-    background:#25D366;
-    color:white;
-    border-radius:50%;
-    text-align:center;
-    font-size:12px;
-    font-weight:bold;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-decoration:none;
-    box-shadow:0 4px 15px rgba(0,0,0,0.3);
-    z-index:999;
-    transition:0.3s;
-}
+<footer class="footer">
+  © 2026 LT Contadores Asesores · Todos los derechos reservados.
+</footer>
 
-.whatsapp-float:hover{
-    transform:scale(1.08);
-}
-</style>
+<script src="script.js"></script>
+
 </body>
 </html>
