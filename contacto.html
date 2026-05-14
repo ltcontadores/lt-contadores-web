@@ -61,16 +61,74 @@
 </section>
 
 <section class="section">
-  <div class="card fade-in">
-    <h2 style="margin-bottom:20px;">Contacto rápido</h2>
+  <div class="card fade-in" style="max-width:800px; margin:0 auto;">
+    <h2 style="margin-bottom:20px; color:#0b2d3b;">
+      Solicita asesoría
+    </h2>
 
-    <p style="margin-bottom:20px;">
-      Escríbenos directamente por WhatsApp para atención inmediata.
+    <p style="margin-bottom:30px;">
+      Completa el formulario y nos pondremos en contacto contigo.
     </p>
 
-    <a href="https://wa.me/523316468984" class="btn-primary" target="_blank">
-      Enviar mensaje
-    </a>
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+      <input type="hidden" name="access_key" value="3d202541-0ccb-4e24-a8f4-c73546cb41d5">
+
+      <div style="display:grid; gap:16px;">
+
+        <input type="text"
+               name="name"
+               placeholder="Nombre completo"
+               required
+               style="padding:14px; border:1px solid #d1d5db; border-radius:12px;">
+
+        <input type="text"
+               name="empresa"
+               placeholder="Empresa (opcional)"
+               style="padding:14px; border:1px solid #d1d5db; border-radius:12px;">
+
+        <input type="tel"
+               name="telefono"
+               placeholder="Teléfono"
+               required
+               style="padding:14px; border:1px solid #d1d5db; border-radius:12px;">
+
+        <input type="email"
+               name="email"
+               placeholder="Correo electrónico"
+               required
+               style="padding:14px; border:1px solid #d1d5db; border-radius:12px;">
+
+        <select name="servicio"
+                required
+                style="padding:14px; border:1px solid #d1d5db; border-radius:12px;">
+
+          <option value="">Selecciona un servicio</option>
+          <option>Contabilidad General</option>
+          <option>Asesoría Fiscal</option>
+          <option>Nómina e IMSS</option>
+          <option>REPSE</option>
+          <option>Devoluciones SAT</option>
+          <option>Defensa Fiscal</option>
+          <option>Planeación Fiscal</option>
+          <option>Otro</option>
+
+        </select>
+
+        <textarea name="message"
+                  placeholder="Cuéntanos cómo podemos ayudarte"
+                  rows="5"
+                  required
+                  style="padding:14px; border:1px solid #d1d5db; border-radius:12px;"></textarea>
+
+        <button type="submit"
+                class="btn-primary"
+                style="border:none; cursor:pointer;">
+          Solicitar asesoría
+        </button>
+
+      </div>
+    </form>
   </div>
 </section>
 
