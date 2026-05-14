@@ -55,13 +55,10 @@ header {
 }
 
 .hero {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 100px 24px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
+  padding: 120px 24px;
+  text-align: center;
 }
 
 .hero h1 {
