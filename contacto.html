@@ -89,65 +89,46 @@
         Solicita asesoría
       </h2>
 
-      <form action="https://api.web3forms.com/submit" method="POST">
+<div style="text-align:center; padding:30px 10px;">
 
-        <input type="hidden" name="access_key" value="3d202541-0ccb-4e24-a8f4-c73546cb41d5">
+  <h2 style="color:#0b2d3b; margin-bottom:20px;">
+    Solicita asesoría personalizada
+  </h2>
 
-        <div style="display:grid; gap:16px;">
+  <p style="margin-bottom:30px; line-height:1.7;">
+    Si deseas atención profesional en materia contable, fiscal, laboral
+    o empresarial, contáctanos directamente y con gusto te atenderemos.
+  </p>
 
-          <input type="text"
-                 name="name"
-                 placeholder="Nombre completo"
-                 required
-                 style="padding:14px; border:1px solid #d1d5db; border-radius:12px;">
+  <div style="
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    flex-wrap:wrap;
+  ">
 
-          <input type="text"
-                 name="empresa"
-                 placeholder="Empresa (opcional)"
-                 style="padding:14px; border:1px solid #d1d5db; border-radius:12px;">
+    <a href="https://wa.me/523316468984"
+       class="btn-primary"
+       target="_blank">
+      Contactar por WhatsApp
+    </a>
 
-          <input type="tel"
-                 name="telefono"
-                 placeholder="Teléfono"
-                 required
-                 style="padding:14px; border:1px solid #d1d5db; border-radius:12px;">
+    <a href="mailto:contacto@ltcontadores.com"
+       style="
+        display:inline-block;
+        padding:14px 24px;
+        border:2px solid #0b2d3b;
+        color:#0b2d3b;
+        text-decoration:none;
+        border-radius:12px;
+        font-weight:700;
+       ">
+      Enviar correo
+    </a>
 
-          <input type="email"
-                 name="email"
-                 placeholder="Correo electrónico"
-                 required
-                 style="padding:14px; border:1px solid #d1d5db; border-radius:12px;">
+  </div>
 
-          <select name="servicio"
-                  required
-                  style="padding:14px; border:1px solid #d1d5db; border-radius:12px;">
-
-            <option value="">Selecciona un servicio</option>
-            <option>Contabilidad General</option>
-            <option>Asesoría Fiscal</option>
-            <option>Nómina e IMSS</option>
-            <option>REPSE</option>
-            <option>Devoluciones SAT</option>
-            <option>Defensa Fiscal</option>
-            <option>Planeación Fiscal</option>
-            <option>Otro</option>
-
-          </select>
-
-          <textarea name="message"
-                    placeholder="Cuéntanos cómo podemos ayudarte"
-                    rows="5"
-                    required
-                    style="padding:14px; border:1px solid #d1d5db; border-radius:12px;"></textarea>
-
-          <button type="submit"
-                  class="btn-primary"
-                  style="border:none; cursor:pointer;">
-            Solicitar asesoría
-          </button>
-
-        </div>
-      </form>
+</div>
 
     </div>
 
